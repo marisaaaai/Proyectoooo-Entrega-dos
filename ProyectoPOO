@@ -1,1 +1,11 @@
 //Que este sea el Proyecto, pq tiene un nombre más facil
+
+//clase main
+class ProyectoPOO{
+	public static void main (String[] args){
+
+
+
+
+	}
+}
