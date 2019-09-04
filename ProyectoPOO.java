@@ -67,7 +67,7 @@ class ProyectoPOO{
 				System.out.println("Ingrese su gasto mensual en salud");
 				gastoSalud = scan.nextFloat();
 				//Se instancia la nueva clase de presupuesto 
-				presupuesto pres = new presupuesto (ingresosm, gastosm);
+				presupuesto pres = new presupuesto (ingresosm);
 				System.out.println(pres.saldo());
 			}
 			else {
