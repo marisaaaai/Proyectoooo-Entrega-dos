@@ -18,7 +18,15 @@ class ProyectoPOO{
 		//Guarda los ingresos del usuario
 		float ingresosm;
 		//Guarda los gastos mensuales del usuario
-		float gastosm;
+		float gastoLuz;
+		float gastoAgua;
+		float gastoTransporte;
+		float gastoVivienda;
+		float gastoComida;
+		float gastoSalud;
+		float gastoEducacion;
+		float gastoPersonal;
+		float gastoBancos;
 		// Guarda la variable de ahorros que tendra el usuario 
 		float ahorrarm;
 		//Se opera para saber el saldo neto que tendra el usuario
@@ -40,8 +48,24 @@ class ProyectoPOO{
 				System.out.println("Presupuesto");
 				System.out.println("Ingrese sus ingresos mensuales: ");
 				ingresosm = scan.nextFloat();
-				System.out.println("Ingrese sus gastos mensuales, los que usted considere que hace cada mes y son constantes, como pagos de carros, casas, prestamos, comida, luz, agua, etc.");
-				gastosm = scan.nextFloat();
+				System.out.println("Ingrese su gasto mensual en luz");
+				gastoLuz = scan.nextFloat();
+				System.out.println("Ingrese su gasto mensual en agua");
+				gastoAgua = scan.nextFloat();
+				System.out.println("Ingrese su gasto mensual en transporte");
+				gastoTransporte = scan.nextFloat();
+				System.out.println("Ingrese su gasto mensual en bancos");
+				gastoBancos = scan.nextFloat();
+				System.out.println("Ingrese su gasto mensual en vivienda");
+				gastoVivienda = scan.nextFloat();
+				System.out.println("Ingrese su gasto mensual en comida");
+				gastoComida = scan.nextFloat();
+				System.out.println("Ingrese su gasto mensual en educacion");
+				gastoEducacion = scan.nextFloat();
+				System.out.println("Ingrese su gasto mensual en asuntos personales");
+				gastoPersonal = scan.nextFloat();
+				System.out.println("Ingrese su gasto mensual en salud");
+				gastoSalud = scan.nextFloat();
 				//Se instancia la nueva clase de presupuesto 
 				presupuesto pres = new presupuesto (ingresosm, gastosm);
 				System.out.println(pres.saldo());
