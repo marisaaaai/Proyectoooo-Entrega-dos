@@ -6,9 +6,9 @@ public class presupuesto{
 	float ingresos;
 	float saldoneto;
 	float ahorros;
-	public presupuesto(float i, float g){
+	public presupuesto(float i){
 		ingresos=i;
-		gastos=g;
+
 	}
 	public String saldo(){
 		this.saldoneto= ingresos - gastos;
