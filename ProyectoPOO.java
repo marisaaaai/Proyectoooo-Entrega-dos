@@ -23,8 +23,9 @@ class ProyectoPOO{
 		float ahorrarm;
 		//Se opera para saber el saldo neto que tendra el usuario
 		float saldoneto;
+		int w=0;
 		//Se crea un while que le permitira al usuario interactuar con el programa hasta que decida salirse
-		while (int w != 4){
+		while (w != 2){
 			//Se le muestra el menu con las opciones al usuario
 			System.out.println("Bienvenido");
 			System.out.println("1.Realizar presupuesto");
@@ -32,36 +33,35 @@ class ProyectoPOO{
 			System.out.println("3.Recetas");
 			System.out.println("Ingrese su opcion en numeros");
 			//Se le pide al usuario que ingrese la opcion deseada
-			w = scan.nextInt();
+			int o = scan.nextInt();
 			//Si el usuario desea crear un presupesto...
-			if (w==1){
+			if (o==1){
 				//Se le pide los ingresos y egresos que tiene para crear el presupuesto
 				System.out.println("Presupuesto");
-				System.out.printn("Ingrese sus ingresos mensuales: ");
+				System.out.println("Ingrese sus ingresos mensuales: ");
 				ingresosm = scan.nextFloat();
 				System.out.println("Ingrese sus gastos mensuales, los que usted considere que hace cada mes y son constantes, como pagos de carros, casas, prestamos, comida, luz, agua, etc.");
 				gastosm = scan.nextFloat();
 				//Se instancia la nueva clase de presupuesto 
 				presupuesto pres = new presupuesto (ingresosm, gastosm);
+				System.out.println(pres.saldo());
 			}
 			else {
-				if ( w ==2){
+				if ( o ==2){
 					System.out.println("Base de datos wtf");
 					//Instanciar nueva clase creada de Restaurantes locales
 				}
 				else{
-					if ( w ==3){
+					if ( o ==3){
 						System.out.println("Base de datos X2");
 						//Instanciar nueva clase creadad de recetas
 					}
 				}
 			}
 			//Se vuelve a mostrar el menu solo que ahora con la opcion de salir
-			System.out.println("Bienvenido");
-			System.out.println("1. Realizar presupuesto");
-			System.out.println("2. Recomendaciones de restaurantes");
-			System.out.println("3. Recetas");
-			System.out.println("4. Salir");
+			System.out.println("¿Desea continuar?");
+			System.out.println("1. Si");
+			System.out.println("2. No");
 			System.out.println("Ingrese su opcion en numeros");
 			w = scan.nextInt();			
 		}
