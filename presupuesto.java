@@ -28,10 +28,31 @@ public class presupuesto{
 		gastoPersonal=gp;
 		gastoSalud=gs;
 	}
-	public String saldo(){
-		this.saldoneto= ingresos - gastos;
+	//muestra el saldo de la persona 
+	public String saldo(){ 
+		gastos = gastoAgua + gastoBancos + gastoComida + gastoEducacion + gastoLuz + gastoPersonal + gastoSalud + gastoTransporte + gastoVivienda;
+		saldoneto = ingresos - gastos; 
 		return "El saldo neto que usted posee es de: Q." +saldoneto+ ".";
 	}
-	
+	//muestra que hacer dependiendo de sus gastos
+	public String analisis(){
+		//valor aproximado para saber si el gasto en cada area es muy alto 
+		if (gastoComida>1000){
+			return "Dirijase a nuestro menu de recetas para saber como cocinar de manera mas economica.";
+		}
+		else if (gastoLuz>500){
+			return"Dirijase a nuestro menu de recomendaciones para saber como ahorrar dinero con pequeñas acciones.";
+		}
+		else if (gastoAgua>500){
+			return"Dirijase a nuestro menu de recomendaciones para saber como ahorrar dinero con pequeñas acciones.";
+		}
+		//aca deberiamos agregar negocios locales mas economicos 
+		else if (gastoPersonal>500){
+			return"Dirijase a nuestro menu de recomendaciones para saber como ahorrar dinero con pequeñas acciones.";
+		}
+		else if (gastoTransporte>800){
+			return"Dirijase a nuestro menu de recomendaciones para saber como ahorrar dinero con pequeñas acciones.";
+		}
+	}
 }
 		
