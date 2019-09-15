@@ -33,10 +33,10 @@ class proveedores{
 		hospitales[11] = "Hospital Regional de Occidente";
 		hospitales[12] = "Hospital Regional de Quiche";
 		hospitales[13] = "Hospital Nacional de Retalhuleu";
-		hospitales[14] = "";
-		hospitales[15] = "";
-		hospitales[16] = "";
-		hospitales[17] = "";
+		hospitales[14] = "Hospital";
+		hospitales[15] = "Hospital Nacional de San Marcos Dr Moises Villagran";
+		hospitales[16] = "Hospital Juan de Dios Rodas Solola";
+		hospitales[17] = "Hospital de Mazatenango";
 		hospitales[18] = "";
 		hospitales[19] = "";
 		hospitales[20] = "Hospital Nacional de Huehuetenango";
