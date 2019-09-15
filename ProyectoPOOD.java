@@ -260,9 +260,10 @@ class ProyectoPOOD{
 			}
 			else {
 				if (opcion ==2){
-					//Escribir los servicios que puede proveer 
-					//pre guntarle cual provee e instanciar una nueva clase de proveedor con servicios
-					//proveedor servicio = new proveedor(servicioqueofrece); como una idea no tiene que ser asi
+					proveedores p = new proveedores(); 
+					
+					//Escribir los servicios que puede proveer y en que departamento (con el menu de numeros) 
+					//pre guntarle cual provee y usar el addDB de su servicio para agregarlo
 				}
 				else {
 					System.out.println("El numero ingresado es invalido");
