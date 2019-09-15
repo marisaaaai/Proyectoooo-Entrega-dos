@@ -37,7 +37,7 @@ class ProyectoPOO{
 			//Se le muestra el menu con las opciones al usuario
 			System.out.println("Bienvenido");
 			System.out.println("1.Realizar presupuesto");
-			System.out.println("2. Recomendaciones de restaurantes");
+			System.out.println("2.Recomendaciones de restaurantes");
 			System.out.println("3.Recetas");
 			System.out.println("Ingrese su opcion en numeros");
 			//Se le pide al usuario que ingrese la opcion deseada
@@ -46,25 +46,25 @@ class ProyectoPOO{
 			if (o==1){
 				//Se le pide los ingresos y egresos que tiene para crear el presupuesto
 				System.out.println("Presupuesto");
-				System.out.println("Ingrese sus ingresos mensuales: ");
+				System.out.println("Ingrese sus ingresos mensuales(Q): ");
 				ingresosm = scan.nextFloat();
-				System.out.println("Ingrese su gasto mensual en luz");
+				System.out.println("Ingrese su gasto mensual en luz (Q) ");
 				gastoLuz = scan.nextFloat();
-				System.out.println("Ingrese su gasto mensual en agua");
+				System.out.println("Ingrese su gasto mensual en agua (Q)");
 				gastoAgua = scan.nextFloat();
-				System.out.println("Ingrese su gasto mensual en transporte");
+				System.out.println("Ingrese su gasto mensual en transporte (Q)");
 				gastoTransporte = scan.nextFloat();
-				System.out.println("Ingrese su gasto mensual en bancos");
+				System.out.println("Ingrese su gasto mensual en bancos (Q)");
 				gastoBancos = scan.nextFloat();
-				System.out.println("Ingrese su gasto mensual en vivienda");
+				System.out.println("Ingrese su gasto mensual en vivienda (Q)");
 				gastoVivienda = scan.nextFloat();
-				System.out.println("Ingrese su gasto mensual en comida");
+				System.out.println("Ingrese su gasto mensual en comida (Q)");
 				gastoComida = scan.nextFloat();
-				System.out.println("Ingrese su gasto mensual en educacion");
+				System.out.println("Ingrese su gasto mensual en educacion (Q)");
 				gastoEducacion = scan.nextFloat();
-				System.out.println("Ingrese su gasto mensual en asuntos personales");
+				System.out.println("Ingrese su gasto mensual en asuntos personales (Q)");
 				gastoPersonal = scan.nextFloat();
-				System.out.println("Ingrese su gasto mensual en salud");
+				System.out.println("Ingrese su gasto mensual en salud (Q)");
 				gastoSalud = scan.nextFloat();
 				//Se instancia la nueva clase de presupuesto 
 				presupuesto pres = new presupuesto (ingresosm);
