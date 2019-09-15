@@ -261,7 +261,55 @@ class ProyectoPOOD{
 			else {
 				if (opcion ==2){
 					proveedores p = new proveedores(); 
-					
+					//mostrar opciones de los proveedores
+					System.out.println("Para ser agregado a nuestra base de datos, indique el numero de servicio que usted brinda:");
+					System.out.println("Servicios:");
+					System.out.println("1. Transporte");
+					System.out.println("2. Hospitales");
+					System.out.println("3. Hoteles");
+					int servicio = scan.nextInt();
+					//Le preguntamos en que departamento imparte los servicios
+					//para poder agregarlo en la base de datos correspondiente
+					System.out.println("Departamentos:");
+					System.out.println("1. Peten");
+					System.out.println("2. Alta Verapaz");
+					System.out.println("3. Baja Verapaz");
+					System.out.println("4. Chimaltenango");
+					System.out.println("5. El Progreso");
+					System.out.println("6. Escuintla");
+					System.out.println("7. Guatemala");
+					System.out.println("8. Jutiapa");
+					System.out.println("9. Jalapa");
+					System.out.println("10. Zacapa");
+					System.out.println("11. Izabal");
+					System.out.println("12. Quetzaltenango");
+					System.out.println("13. Quiche");
+					System.out.println("14. Retalhuleu");
+					System.out.println("15. Santa Rosa");
+					System.out.println("16. San Marcos");
+					System.out.println("17. Solola");
+					System.out.println("18. Suchitepequez");
+					System.out.println("19. Totonicapan");
+					System.out.println("20. Sacatepequez");
+					System.out.println("21. Huehuetenango");
+					System.out.println("22. Chiquimula");
+					System.out.println("Por favor ingrese el numero de su departamento");
+					int dept = scan.nextInt();
+					//le pedimos que ingrese el nombre bajo el que sera registrado
+					System.out.println("Ingrese el nombre bajo el que desea ser registrado");
+					String nombreNegocio = scan.nextLine();
+					if (servicio == 1){ 
+						p.addDBtransporte(nombreNegocio,dept-1);
+					}
+					else if (servicio == 2){
+						p.addDBhospitales(nombreNegocio, dept-1);
+					}
+					else if (servicio==3){
+						p.addDBhoteles(nombreNegocio, dept-1);
+					}
+					else {
+						System.out.println("Ingreso una opcion incorrecta.");
+					}
 					//Escribir los servicios que puede proveer y en que departamento (con el menu de numeros) 
 					//pre guntarle cual provee y usar el addDB de su servicio para agregarlo
 				}
