@@ -29,10 +29,10 @@ class proveedores{
 		hospitales[7] = "Hospital de Jutiapa";
 		hospitales[8] = "Hospital Nacional Nicolassa Cruz";
 		hospitales[9] = "Hospital Regional de Zacapa";
-		hospitales[10] = "Hospital Centro Medico Maya";
+		hospitales[10] = "Hospital Nacional Infantil Elisa Martinez";
 		hospitales[11] = "Hospital Regional de Occidente";
-		hospitales[12] = "";
-		hospitales[13] = "";
+		hospitales[12] = "Hospital Regional de Quiche";
+		hospitales[13] = "Hospital Nacional de Retalhuleu";
 		hospitales[14] = "";
 		hospitales[15] = "";
 		hospitales[16] = "";
