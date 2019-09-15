@@ -24,7 +24,7 @@ class proveedores{
 	}
 	// los metodos que muestran la base de datos reciben el # departamento 
 	public String DBhoteles(int d){
-		return hoteles[i]; 
+		return hoteles[d]; 
 	}
 	
 	public void addDBhospitales(String i, int d){
@@ -32,7 +32,7 @@ class proveedores{
 	}
 
 	public String DBhospitales(int d){
-		return hospitales[i]; 
+		return hospitales[d]; 
 	}
 	
 	public void addDBtransporte(String i, int d){
@@ -40,6 +40,6 @@ class proveedores{
 	}
 
 	public String DBtransporte(int d){
-		return transporte[i]; 
+		return transporte[d]; 
 	}
 }
