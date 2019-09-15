@@ -33,12 +33,12 @@ class proveedores{
 		hospitales[11] = "Hospital Regional de Occidente";
 		hospitales[12] = "Hospital Regional de Quiche";
 		hospitales[13] = "Hospital Nacional de Retalhuleu";
-		hospitales[14] = "Hospital";
+		hospitales[14] = "Hospital Regional de Cuilapa";
 		hospitales[15] = "Hospital Nacional de San Marcos Dr Moises Villagran";
 		hospitales[16] = "Hospital Juan de Dios Rodas Solola";
 		hospitales[17] = "Hospital de Mazatenango";
-		hospitales[18] = "";
-		hospitales[19] = "";
+		hospitales[18] = "Hospital Nacional de Totonicapan";
+		hospitales[19] = "Hospital Nacional Pedro de Bethancourt";
 		hospitales[20] = "Hospital Nacional de Huehuetenango";
 		hospitales[21] = "Hospital Nacional de Chiquimula";
 	}
