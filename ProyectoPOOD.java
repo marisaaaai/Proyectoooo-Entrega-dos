@@ -232,56 +232,46 @@ class ProyectoPOOD{
 									System.out.println("A continuacion se le enviará a su correo una lista de pediatras en el departamento de Chiquimula");
 									System.out.println("Está lista poseera su ubicacion, numero de telefono y el nombre del Doctor");
 								}
-
-								System.out.println("Gracias por usar este servicio. Desea hacer otra llamada");
-								System.out.println("1. Si");
-								System.out.println("2. No");
-								w = scan.nextInt();
-
-
-								
-
-								
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-							
-
-
 							}
+							else {
+								if (nuevopediatra==2){
+									System.out.println("Esta bien, pero por favor contacte un especialista");
+								}
+								else {
+									System.out.println("El numero ingresado es invalido");
+								}
+							}
+						}
+						else {
+							System.out.println("El numero ingresado es invalido");
 						}
 					}
 				}
+				else{
+					if (edad==2){
+						System.out.println("Ha contestado que el paciente es mayor de edad");
+						System.out.println("A continuacion se le brindara informacion sobre los procesos que debera de llevar en su consulta");
+						//paciente pacienteusuario = new paciente(sintomas);
+					}
+					else{
+						System.out.println("El numero ingresado es invalido");
+					}
+				}
 			}
+			else {
+				if (opcion ==2){
+					//Escribir los servicios que puede proveer 
+					//pre guntarle cual provee e instanciar una nueva clase de proveedor con servicios
+					//proveedor servicio = new proveedor(servicioqueofrece); como una idea no tiene que ser asi
+				}
+				else {
+					System.out.println("El numero ingresado es invalido");
+				}
+			}
+			System.out.println("Desea contniuar usando este servicio de llamada?");
+			System.out.println("Si su respuesta es 'Si' apachar el 1");
+			System.out.println("Si su respuesta es 'No' apachar el 2");
+			w = scan.nextInt();
 		}
 	}
 }
-
-
-
-
-
-
-
-
-								
