@@ -15,6 +15,7 @@ class ProyectoPOO{
 		// se definen las variables de instancia
 		//Una variable que comienza el while
 		int w=0;
+<<<<<<< HEAD
 		//Un while que comienza mostrandole el menú principal al usuario
 		while (w!=3){
 			//Se le muestra la opcion de si es paciente o proveedor
@@ -78,48 +79,52 @@ class ProyectoPOO{
 								System.out.println("El numero que ingresó no es una opcion, intentelo de nuevo");
 							}
 						}
-					}
-					else{
-						//si el usuario no tiene pediatra
-						if (pediatra==2){
-							System.out.println("Su respuesta ha sido que no tiene pediatra");
-							//se le pregunta si desea que se le proporcione informacion de un pediatra
-							System.out.println("Desea que nosotros le proporcionemos el contacto de un pediatra?");
-							System.out.println("Si la respuesta es 'Si' presione 1");
-							System.out.println("Si la respuesta es 'No' presione 2");
-							int nuevopediatra=scan.nextInt();
-							//Si la respuesta es que si
-							if (nuevopediatra==1){
-								System.out.println("Con gusto le proporcionaremos informacion de pediatras");
-								System.out.println("Pero primero, compartanós el número de departamento en el que se encuentra usted");
-								//se le pregunta su ubicacion para darle informacion sobre pediatras en esa área
-								System.out.println("1. Peten");
-								System.out.println("2. Alta Verapaz");
-								System.out.println("3. Baja Verapaz");
-								System.out.println("4. Chimaltenango");
-								System.out.println("5. El Progreso");
-								System.out.println("6. Escuintla");
-								System.out.println("7. Guatemala");
-								System.out.println("8. Jutiapa");
-								System.out.println("9. Jalapa");
-								System.out.println("10. Zacapa");
-								System.out.println("11. Izabal");
-								System.out.println("12. Quetzaltenango");
-								System.out.println("13. Quiche");
-								System.out.println("14. Retalhuleu");
-								System.out.println("15. Santa Rosa");
-								System.out.println("16. San Marcos");
-								System.out.println("17. Solola");
-								System.out.println("18. Suchitepequez");
-								System.out.println("19. Totonicapan");
-								System.out.orintln("20. Sacatepequez");
-								System.out.println("21. Huehuetenango");
-								System.out.println("22. Chiquimula");
-								System.out.pritnln("Por favor ingrese el numero de su departamento");
-								int departamento = scan.nextInt();
-								System.out.println("Por favor ingrese su correo para enviarle la informacion deseada:");
-								int correousuario= scan.nextLine();
-								if (departamento==1){
-									System.out.pritnln("A continuacion se le enviará a su correo una lista de pediatras en el departamento de Peten");
-									System.out.println("Está lista poseera su ubicacion, numero de telefono y el nombre del Doctor")
-								
+=======
+		//Se crea un while que le permitira al usuario interactuar con el programa hasta que decida salirse
+		while (w != 2){
+			//Se le muestra el menu con las opciones al usuario
+			System.out.println("Bienvenido");
+			System.out.println("1.Realizar presupuesto");
+			System.out.println("2.Recomendaciones de restaurantes");
+			System.out.println("3.Recetas");
+			System.out.println("Ingrese su opcion en numeros");
+			//Se le pide al usuario que ingrese la opcion deseada
+			int o = scan.nextInt();
+			//Si el usuario desea crear un presupesto...
+			if (o==1){
+				//Se le pide los ingresos y egresos que tiene para crear el presupuesto
+				System.out.println("Presupuesto");
+				System.out.println("Ingrese sus ingresos mensuales(Q): ");
+				ingresosm = scan.nextFloat();
+				System.out.println("Ingrese su gasto mensual en luz (Q) ");
+				gastoLuz = scan.nextFloat();
+				System.out.println("Ingrese su gasto mensual en agua (Q)");
+				gastoAgua = scan.nextFloat();
+				System.out.println("Ingrese su gasto mensual en transporte (Q)");
+				gastoTransporte = scan.nextFloat();
+				System.out.println("Ingrese su gasto mensual en bancos (Q)");
+				gastoBancos = scan.nextFloat();
+				System.out.println("Ingrese su gasto mensual en vivienda (Q)");
+				gastoVivienda = scan.nextFloat();
+				System.out.println("Ingrese su gasto mensual en comida (Q)");
+				gastoComida = scan.nextFloat();
+				System.out.println("Ingrese su gasto mensual en educacion (Q)");
+				gastoEducacion = scan.nextFloat();
+				System.out.println("Ingrese su gasto mensual en asuntos personales (Q)");
+				gastoPersonal = scan.nextFloat();
+				System.out.println("Ingrese su gasto mensual en salud (Q)");
+				gastoSalud = scan.nextFloat();
+				//Se instancia la nueva clase de presupuesto 
+				presupuesto pres = new presupuesto (ingresosm, gastoLuz, gastoAgua, gastoTransporte, gastoBancos, gastoVivienda, gastoComida, gastoEducacion, gastoPersonal, gastoSalud);
+				System.out.println(pres.saldo());
+				System.out.println(pres.analisis()); 
+			}
+			else {
+				if ( o ==2){
+					System.out.println("Base de datos wtf");
+					//Instanciar nueva clase creada de Restaurantes locales
+				}
+				else{
+					if ( o ==3){
+						System.out.println("Base de datos X2");
+						//Instanciar nueva clase creadad de recetas
