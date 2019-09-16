@@ -45,7 +45,7 @@ class ProyectoPOOD{
 					System.out.println("6. Dolores de cabeza");
 					int sintoma = scan.nextInt();				
 					//se le pregunta si es menor o mayor de edad
-					System.out.println("La persona que esta sintiendo estos sintomas es menor, o de la misma edad, de 18 anios?");
+					System.out.println("La persona que esta sintiendo estos sintomas es menor, o de la misma edad de 18 anios?");
 					System.out.println("Si la respuesta es 'Si' presione 1");
 					System.out.println("Si la respuesta es 'No' presione 2");
 					int edad = scan.nextInt();
@@ -421,19 +421,94 @@ class ProyectoPOOD{
 						}
 					}
 				}
-				else{
-					//aqui comenza luis peeeeee 
-					if (consulta==2){
+				else if (consulta==2){
 						System.out.println("Usted ha ingresado aqui porque ya tuvo una consulta medica antes");
 						System.out.println("Su nueva cita es con un doctor lejos de su ubicacion?");
 						System.out.println("Si su respuesta es 'Si' presione 1");
 						System.out.println("Si su respuesta es 'No' presione 2");
 						int lejania=scan.nextInt();
+
+						if (lejania==1){
+							System.out.println("A donde necesita ir?");
+							String legarLejano = scan.nextLine();
+							System.out.println("Ya sabe con quien ir?");
+							System.out.println("1.Si");
+							System.out.println("2.No");
+							int decicionLejana = scan.nextInt();
+
+							if (decicionLejana==1){
+								System.out.println("Ingrese el nombre de su doctor/a con el cual necesita la cita");
+								String nombreDoctorLejano = scan.nextLine();
+								System.out.println("Quiere que le programemos su cita?");
+								System.out.println("1.Si");
+								System.out.println("2.No");
+								int QuiereCitaLejana = scan.nextInt();
+								if (QuiereCitaLejana == 1){
+									System.out.println("Su cita ha sido programada. Se le enviara mas informacion al correo.");
+									System.out.println(" ");
+									System.out.println("Necesita transporte y/o hospedaje?");
+									System.out.println("1.Si");
+									System.out.println("2.No");
+									int DecicionHospedajeLejano = scan.nextInt;
+
+									if (DecicionHospedajeLejano== 1){
+										System.out.println("Se le ha enviado informacion al correo.");
+									}
+
+									if (DecicionHospedajeLejano == 2){
+										System.out.println("Perfecto.");
+									}
+
+								}
+
+								else if (QuiereCitaLejana==2){
+									System.out.println("Gracias por usar el programa");
+									w = 2;
+								}
+
+								}
+
+								else if (decicionLejana == 2){
+									System.out.println("Desea que le demos informacion de doctores cerca de su lugar escogido?");
+									System.out.println("1.Si");
+									System.out.println("2.No");
+									int infoDoctores = scan.nextInt();
+
+									if (infoDoctores==1){
+										System.out.println("Se le ha enviado informacion a su correo electronico.");
+									}
+
+									if (infoDoctores==2){
+										System.out.println(" Le recomendamos que busque informacion por su cuenta.");
+									}
+								}
+							}
+
+							else if (lejania == 2){
+
+								System.out.println("Desea que le demos transporte?");
+								System.out.println("1. Si");
+								System.out.println("2. No");
+								int quiereTransporte = scan.nextInt();
+								if(quiereTransporte== 1){
+									System.out.println("Se le ha enviado informacion");
+
+								}
+
+								if(quiereTransporte== 2){
+									System.out.println("Perfecto.");
+									w = 2;
+								}
+
+							}
+
+						}
 					}
+
 					else{
 						System.out.println("El numero ingresado es invalido");
 					}
-				}
+				
 			}
 			else {
 				if (opcion ==2){
@@ -494,10 +569,9 @@ class ProyectoPOOD{
 					System.out.println("El numero ingresado es invalido");
 				}
 			}
-			System.out.println("Desea contniuar usando este servicio de llamada?");
+			System.out.println("Desea continuar usando este servicio de llamada?");
 			System.out.println("Si su respuesta es 'Si' apachar el 1");
 			System.out.println("Si su respuesta es 'No' apachar el 2");
 			w = scan.nextInt();
 		}
 	}
-}
