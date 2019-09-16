@@ -9,14 +9,14 @@ Proveedores*/
 
 class proveedores{
 	// una matriz para cada base de datos y cada casilla va a ser un departamento (cuando busquemos hotel por departamento nos vamos a la casilla de ese numero)
-	String[] hoteles;
-	String[] hospitales;
-	String[] transporte;
-	
+	String[] hoteles = new String[22]; 
+	String[] hospitales = new String[22];
+	String[] transporte = new String[22];
 	public proveedores(){
+		/*
 		String[] hoteles = new String[22]; 
 		String[] hospitales = new String[22];
-		String[] transporte = new String[22];
+		String[] transporte = new String[22];*/
 		
 		// le agregamos a la base de datos hospitales iniciales
 		hospitales[0] = "Hospital Centro Medico Maya  7926 0180";
