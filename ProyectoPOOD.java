@@ -335,7 +335,7 @@ class ProyectoPOOD{
 					scan.nextLine(); 
 					//departamento esta en dept 
 					//le pedimos que ingrese la informacion 
-					System.out.println("Ingrese la informacion de su servicio: ");
+					System.out.println("Ingrese la informacion de su servicio (nombre, numero de contacto: ");
 					String nombreNegocio = scan.nextLine();
 					if (servicio == 1){ 
 						p.addDBtransporte(nombreNegocio,dept-1);
