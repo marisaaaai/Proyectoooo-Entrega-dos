@@ -76,7 +76,14 @@ class ProyectoPOOD{
 					System.out.println("3. Dolor de oido");
 					System.out.println("4. Dolores de cabeza");
 					System.out.println("5. Infeccion urinaria (dolores al ir al banio, picazon en las areas privadas...)");
-					System.out.println("6. Dolores de cabeza");
+					System.out.println("6. Vomitos y diarrea");
+					System.out.println("7. Cambio de peso repentino");
+					System.out.println("8. Presion alta");
+					System.out.println("9. Escalofrios, dolor intenso en torax");
+					System.out.println("10. Fiebre alta, ronchas o zarpullido en la piel");
+					System.out.println("11. Congestion nasal");
+					System.out.println("12. Estreñimiento (dificultad para hacer popo)");
+					System.out.println("13. Dolores en el pecho agudo");
 					int sintoma = scan.nextInt();	
 					scan.nextLine(); 
 					//se le pregunta si es menor o mayor de edad
