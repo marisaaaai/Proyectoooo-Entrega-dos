@@ -18,6 +18,8 @@ class ProyectoPOOD{
 		int w=0;
 		//variable para usar la calse y llamar bas de datos 
 		proveedores p = new proveedores(); 
+		//variable para enfermedad
+		enfermedad enfermedad = new enfermedad(); 
 		//Un while que comienza mostrandole el menú principal al usuario
 		while (w!=2){
 			//Se le muestra la opcion de si es paciente o proveedor
@@ -62,6 +64,37 @@ class ProyectoPOOD{
 				System.out.println("");
 				//Se le muestran los sintomas que podria estar teniendo
 				System.out.println("Buen dia " + nombre + " lamentamos que te estes sintiendo mal");
+				//while para poder ingresar mas de un sintoma en caso que sea necesario 
+				String massintomas = "si";
+				int sintoma;
+				//acumula el diagnostico para mostrar al final (al final del if de paciente) 
+				String diagnosticos = "Sus posibles enfermedades son: "; 
+				while (massintomas.equalsIgnoreCase("si")){
+					System.out.println("A continuacion te enlistaremos sintomas que puedes estar sintiendo, por favor ingresa el numero del sintoma que mas te esta afectando:");
+					System.out.println("1. Tos");
+					System.out.println("2. Dolor de garganta");
+					System.out.println("3. Dolor de oido");
+					System.out.println("4. Dolores de cabeza");
+					System.out.println("5. Dolores al orinar, picazón en genitales");
+					System.out.println("7. Vomitos y diarrea");
+					System.out.println("8. Cambio de peso repentino");
+					System.out.println("9. Presion alta");
+					System.out.println("10. Escalofrios, dolor intenso en torax");
+					System.out.println("11. Fiebre alta, ronchas o rash en la piel");
+					System.out.println("12. Congestion");  
+					System.out.println("13. Dolores en el pecho agudo");
+					System.out.println("14. Dolor de estomago");
+					System.out.println("15. Dolor en las articulaciones ( dolor en brazo, piernas, manos, ect... )");				
+					System.out.println("16. Temblores en el cuerpo");
+					System.out.println("17. Perdida del equilibrio");
+					System.out.println("18. Dolor de espalda");
+					sintoma = scan.nextInt();
+					scan.nextLine(); 
+					//saldria algo asi Sus posibles enfermedades son: tos, hipertension, alergia, 
+					diagnosticos = diagnosticos + enfermedad.diagnostico(sintoma)+", " ;
+					System.out.println("Tiene otro sintoma que desee agregar? (si/no)");
+					massintomas = scan.nextLine(); 
+				}
 				System.out.println("Ya has hecho una consulta con algun doctor o especialista");
 				System.out.println("Si esta es su primera cita, presione 1");
 				System.out.println("Si esta es su segunda vez, presione 2");
@@ -70,28 +103,6 @@ class ProyectoPOOD{
 				if (consulta==1){
 					System.out.println("");
 					System.out.println("------------------------------------------------------");
-					System.out.println("A continuacion te enlistaremos sintomas que puedes estar sintiendo, por favor ingresa el numero del sintoma que mas te esta afectando:");
-					System.out.println("1. Tos");
-					System.out.println("2. Dolor de Garganta");
-					System.out.println("3. Dolor de oido");
-					System.out.println("4. Dolores de cabeza");
-					System.out.println("5. Infeccion urinaria (dolores al ir al banio, picazon en las areas privadas...)");
-					System.out.println("6. Vomitos y diarrea");
-					System.out.println("7. Cambio de peso repentino");
-					System.out.println("8. Presion alta");
-					System.out.println("9. Escalofrios, dolor intenso en torax");
-					System.out.println("10. Fiebre alta, ronchas o zarpullido en la piel");
-					System.out.println("11. Congestion nasal");
-					System.out.println("12. Estreñimiento (dificultad para hacer popo)");
-					System.out.println("13. Dolores en el pecho agudo");
-					System.out.println("14. Dolor de estomago");
-					System.out.println("15. Dolor en las articulaciones ( dolor en brazo, piernas, manos, ect... )");
-					System.out.println("16. Temblores en el cuerpo");
-					System.out.println("17. Perdida del equilibrio");
-					System.out.println("18. Dolor de espalda");
-
-					int sintoma = scan.nextInt();	
-					scan.nextLine(); 
 					//se le pregunta si es menor o mayor de edad
 					System.out.println("------------------------------------------------------");
 					System.out.println("");
