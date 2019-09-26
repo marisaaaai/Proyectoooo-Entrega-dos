@@ -84,6 +84,12 @@ class ProyectoPOOD{
 					System.out.println("11. Congestion nasal");
 					System.out.println("12. Estreñimiento (dificultad para hacer popo)");
 					System.out.println("13. Dolores en el pecho agudo");
+					System.out.println("14. Dolor de estomago");
+					System.out.println("15. Dolor en las articulaciones ( dolor en brazo, piernas, manos, ect... )");
+					System.out.println("16. Temblores en el cuerpo");
+					System.out.println("17. Perdida del equilibrio");
+					System.out.println("18. Dolor de espalda");
+
 					int sintoma = scan.nextInt();	
 					scan.nextLine(); 
 					//se le pregunta si es menor o mayor de edad
