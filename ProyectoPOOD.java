@@ -389,7 +389,6 @@ class ProyectoPOOD{
 					System.out.println("Para ser agregado a nuestra base de datos, indique el numero de servicio que usted brinda:");
 					System.out.println("Servicios:");
 					System.out.println("1. Transporte");
-					System.out.println("2. Hospitales");
 					System.out.println("3. Hoteles");
 					int servicio = scan.nextInt();
 					scan.nextLine(); 
@@ -399,9 +398,6 @@ class ProyectoPOOD{
 					String nombreNegocio = scan.nextLine();
 					if (servicio == 1){ 
 						p.addDBtransporte(nombreNegocio,dept-1);
-					}
-					else if (servicio == 2){
-						p.addDBhospitales(nombreNegocio, dept-1);
 					}
 					else if (servicio==3){
 						p.addDBhoteles(nombreNegocio, dept-1);
