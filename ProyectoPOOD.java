@@ -131,8 +131,7 @@ class ProyectoPOOD{
 							System.out.println("Su posible diagnostico por el momento es");
 							System.out.println("");
 							System.out.println("");
-							enfermedad pacienteusuario = new enfermedad();
-							System.out.println(pacienteusuario.diagnostico(sintoma));
+							System.out.println(diagnosticos);
 							System.out.println("");
 							System.out.println("");
 							//Se le pregunta al usuario si se desea que se le programe una cita
@@ -153,6 +152,10 @@ class ProyectoPOOD{
 								int numeropediatra=scan.nextInt();
 								scan.nextLine(); 
 								System.out.println("Nosotros estaremos llamando a su pediatra para programar una cita, su pediatra deberia de llamarlo a usted para confirmarle la cita, o para programar a otra hora en todo caso no estuviera disponible");
+								System.out.println("");
+								System.out.println("Estos es el diagnostico que puede tener:");
+								System.out.println(diagnosticos);
+								System.out.println("");
 							}
 							else{
 								//si no desea que se le haga la cita insistir en que el la haga y llame al pediatra
@@ -161,6 +164,10 @@ class ProyectoPOOD{
 									System.out.println("------------------------------------------------------");
 									System.out.println("Su respuesta ha sido que no quiere que le agendemos una cita con su pediatra");
 									System.out.println("Esta bien, pero por favor luego de esta llamada no olvide de contactar con su pediatra, entre mas tiempo espera peor se pueden poner los sintomas, es mejor resolverlo lo antes posible");
+									System.out.println("");
+									System.out.println("Estos es el diagnostico que puede tener:");
+									System.out.println(diagnosticos);
+									System.out.println("");
 								}
 								else{
 									System.out.println("------------------------------------------------------");
@@ -189,8 +196,7 @@ class ProyectoPOOD{
 									System.out.println("Su posible diagnostico por el momento es");
 									System.out.println("");
 									System.out.println("");
-									enfermedad pacienteusuario = new enfermedad();
-									System.out.println(pacienteusuario.diagnostico(sintoma));
+									System.out.println(diagnosticos);
 									System.out.println("");
 									System.out.println("");
 
@@ -202,8 +208,7 @@ class ProyectoPOOD{
 										System.out.println("Su posible diagnostico por el momento es");
 										System.out.println("");
 										System.out.println("");
-										enfermedad pacienteusuario = new enfermedad();
-										System.out.println(pacienteusuario.diagnostico(sintoma));
+										System.out.println(diagnosticos);
 										System.out.println("");
 										System.out.println("");
 									}
@@ -236,8 +241,7 @@ class ProyectoPOOD{
 								System.out.println("Su posible diagnostico es");
 								System.out.println("");
 								System.out.println("");
-								enfermedad pacienteusuario = new enfermedad();
-								System.out.println(pacienteusuario.diagnostico(sintoma));
+								System.out.println(diagnosticos);
 								System.out.println("");
 								System.out.println("");
 							}
@@ -250,8 +254,7 @@ class ProyectoPOOD{
 									System.out.println("Su posible diagnostico es");
 									System.out.println("");
 									System.out.println("");
-									enfermedad pacienteusuario = new enfermedad();
-									System.out.println(pacienteusuario.diagnostico(sintoma));
+									System.out.println(diagnosticos);
 									System.out.println("");
 									System.out.println("");								
 								}
