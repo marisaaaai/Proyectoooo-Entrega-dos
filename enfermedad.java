@@ -60,14 +60,22 @@ class enfermedad{
 			return"Los dolores en las articulaciones no siempre se deben a una enfermedad. Por ejemplo, el uso excesivo de la articulación en una actividad física pesada, la falta de uso, torceduras o esguinces. Aunque pueden existir enfermedades que se presenten con este sintoma como la artritis, la artrosis o Fibromialgia. Es importante describir con presicion el tipo de dolor que se siente para diferenciar las posibles causas.";
 		}
 		else if(sintoma==16){
-			return"Generalmente la causa del temblor es un problema en las partes profundas del cerebro que controlan los movimientos. La mayoría de los tipos de temblor no tiene causa conocida, aunque hay algunas formas que parecen ser hereditarias. Tales como Esclerosis multiple o Parkinsons por ejemplo, muchas como el Parkinsons son enfermedades neurodegenarativas que afectan ciertas partes del cerebro."	
+			return"Generalmente la causa del temblor es un problema en las partes profundas del cerebro que controlan los movimientos. La mayoría de los tipos de temblor no tiene causa conocida, aunque hay algunas formas que parecen ser hereditarias. Tales como Esclerosis multiple o Parkinsons por ejemplo, muchas como el Parkinsons son enfermedades neurodegenarativas que afectan ciertas partes del cerebro."	;
 		}	
 		else if(sintoma==17){
-			return"La peridda del equilibrio en la mayoria de los casos se debe a un problema en el oido de la persona afectada. Se puede dar por la enfermedad de Meniere, por migrana, Neuritis Vestibular, etc..."
+			return"La peridda del equilibrio en la mayoria de los casos se debe a un problema en el oido de la persona afectada. Se puede dar por la enfermedad de Meniere, por migrana, Neuritis Vestibular, etc...";
 		}	
 		else if(sintoma==18){
-			return"El dolor de espalda no siempre se debe a una enfermedad y puede ser provocado por un uso exesivo de la espalda al levantar objetos o haciendo movimientos muy bruzcos. Si el dolor es muy intenso se puede tratar de una hernia discal y si hay una curvatura en la espalda puede tratarse de escoliosis."
-		}	
+			return"El dolor de espalda no siempre se debe a una enfermedad y puede ser provocado por un uso exesivo de la espalda al levantar objetos o haciendo movimientos muy bruzcos. Si el dolor es muy intenso se puede tratar de una hernia discal y si hay una curvatura en la espalda puede tratarse de escoliosis.";
+		}
+
+		else{
+			return " ";
+	}
+
+		
+	}
+}
 		
 				//Estos son os sintomas del menu en los links estas las enfermedades que hay que usar y se pueden agregar. En los ifs puede haber as de 1 sintoma con AND 
 				/*System.out.println("1. Tos");
@@ -83,5 +91,7 @@ class enfermedad{
 				//12. congestion 
 				//https://www.prensalibre.com/vida/salud-y-familia/enfermedadaes-que-afectan-a-los-guatemaltecos/
 				//https://www.qualipharm.info/estas-son-las-5-enfermedades-mas-comunes-en-guatemala/
-	} 	
-}
+	
+		
+
+

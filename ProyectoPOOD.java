@@ -116,6 +116,13 @@ class ProyectoPOOD{
 							System.out.println("------------------------------------------------------");
 							System.out.println("Su respuesta ha sido que si tiene pediatra, si se ha equivocado, cuelgue e intente de nuevo");
 							System.out.println("Si esta si ha sido su respuesta, por favor llame a su pediatra y consulte si puede agende una cita con el");
+							System.out.println("Su posible diagnostico por el momento es");
+							System.out.println("");
+							System.out.println("");
+							enfermedad pacienteusuario = new enfermedad();
+							System.out.println(pacienteusuario.diagnostico(sintoma));
+							System.out.println("");
+							System.out.println("");
 							//Se le pregunta al usuario si se desea que se le programe una cita
 							System.out.println("Desea que nosotros lo llamemos y agendemos una cita por usted?");
 							System.out.println("Si la respuesta es 'Si' presione 1");
@@ -167,11 +174,26 @@ class ProyectoPOOD{
 									System.out.println("Con gusto le proporcionaremos informacion de pediatras");
 									//el dept esta en dept                                                                                       
 									System.out.println("");
+									System.out.println("Su posible diagnostico por el momento es");
+									System.out.println("");
+									System.out.println("");
+									enfermedad pacienteusuario = new enfermedad();
+									System.out.println(pacienteusuario.diagnostico(sintoma));
+									System.out.println("");
+									System.out.println("");
+
 									System.out.println("Se muestra los hospitales que puede ir en su departamento que tienen pediatras: "+p.DBhospitales(dept-1));
 								}
 								else {
 									if (nuevopediatra==2){
 										System.out.println("Esta bien, pero por favor contacte un especialista");
+										System.out.println("Su posible diagnostico por el momento es");
+										System.out.println("");
+										System.out.println("");
+										enfermedad pacienteusuario = new enfermedad();
+										System.out.println(pacienteusuario.diagnostico(sintoma));
+										System.out.println("");
+										System.out.println("");
 									}
 									else {
 										System.out.println("El numero ingresado es invalido");
@@ -199,8 +221,13 @@ class ProyectoPOOD{
 								System.out.println("------------------------------------------------------");
 								System.out.println("Esta bien, nos alegra que ya tenga un especialista conocido con el cual ir");
 								System.out.println("Este es el proceso basico de una consulta clinica");
-								//paciente pacienteusuario = new paciente(sintomas);
-								//System.out.println(pacienteusuario.mostrarinfo());
+								System.out.println("Su posible diagnostico es");
+								System.out.println("");
+								System.out.println("");
+								enfermedad pacienteusuario = new enfermedad();
+								System.out.println(pacienteusuario.diagnostico(sintoma));
+								System.out.println("");
+								System.out.println("");
 							}
 							else{
 								if (doctor==2){
@@ -208,8 +235,13 @@ class ProyectoPOOD{
 									System.out.println("------------------------------------------------------");
 									System.out.println("Se le mostrara los hospitales en su departamento que puede ir para tener un doctor: "+p.DBhospitales(dept));
 									System.out.println("Teniendo la informacion de doctores, este es el proceso basico que se necesita en la clinica");
-									//paciente pacienteusuario = new paciente(sintomas);
-									//System.out.println(pacienteusuario.mostrarinfo());								
+									System.out.println("Su posible diagnostico es");
+									System.out.println("");
+									System.out.println("");
+									enfermedad pacienteusuario = new enfermedad();
+									System.out.println(pacienteusuario.diagnostico(sintoma));
+									System.out.println("");
+									System.out.println("");								
 								}
 								else{
 									System.out.println("El numero ingresado es invalido");
