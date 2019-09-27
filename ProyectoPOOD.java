@@ -98,7 +98,7 @@ class ProyectoPOOD{
 				}
 				System.out.println("Ya has hecho una consulta con algun doctor o especialista");
 				System.out.println("Si esta es su primera cita, presione 1");
-				System.out.println("Si esta es su segunda vez, presione 2");
+				System.out.println("Si ya ha tenido una consulta medica, presione 2");
 				int consulta= scan.nextInt();
 				scan.nextLine(); 
 				if (consulta==1){
@@ -107,7 +107,7 @@ class ProyectoPOOD{
 					//se le pregunta si es menor o mayor de edad
 					System.out.println("------------------------------------------------------");
 					System.out.println("");
-					System.out.println("La persona que esta sintiendo estos sintomas es menor, o de la misma edad de 18 anios?");
+					System.out.println("El paciente es menor a 18 anios? (si/no)");
 					System.out.println("Si la respuesta es 'Si' presione 1");
 					System.out.println("Si la respuesta es 'No' presione 2");
 					int edad = scan.nextInt();
