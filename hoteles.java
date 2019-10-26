@@ -6,10 +6,10 @@ Jose Ramos
 Luis Pedro García
 Maria Montoya
 Hoteles*/
-class hoteles{
+class hoteles extends proveedores{
 		//Se instancia el array de hoteles
 		String[] hoteles = new String[22];
-		
+	public hoteles(){
 		//se instancian hoteles iniciales
 		hoteles[0] = "Hotel Peten 2366 2841";
 		hoteles[1] = "Hotel y Restaurante Casa Gaia 7941 7021";
@@ -33,12 +33,12 @@ class hoteles{
 		hoteles[19] = "Hotel Casa de María 7832 1294";
 		hoteles[20] = "Hotel Ruinas Resort 7932 5555";
 		hoteles[21] = "Hotel Maria Teresa 7942 0177";
-		
-	//Se definen los metodos a usar
-	public String DBhoteles(int d){
-		return hoteles[d]; 
 	}
-	public void addDBhoteles(String i, int d){
+	public void addDB(String i, int d){
 		hoteles[d] = hoteles[d] + " " + i; 
 	}
+	public String DB(int d){
+		return hoteles[d]; 
+	}
+	
 }
