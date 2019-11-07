@@ -7,10 +7,18 @@ Luis Pedro García
 Maria Montoya
 Main*/
 //Se importa el scanner
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 class ProyectoPOOD{
+	
 	public static void main (String[] args){
+		
+		//variable para regresar al usuario si hay una exepcion.
+		int DO=1;
+		
+		//comando para correr mientras la variable "DO" sea 1.
+		do {
 		//Se instancia el scanner
 		Scanner scan = new Scanner(System.in);
 		// se definen las variables de instancia
@@ -27,6 +35,9 @@ class ProyectoPOOD{
 		//variable para enfermedad
 		enfermedad enfermedad = new enfermedad(); 
 		//Un while que comienza mostrandole el menú principal al usuario
+		
+		//try para ver agarrar los posibles errores
+		try {
 		while (w!=2){
 			//Se le muestra la opcion de si es paciente o proveedor
 			System.out.println("Bienvenido a la simulacion de un servicio de llamadas");
@@ -101,7 +112,7 @@ class ProyectoPOOD{
 					System.out.println("Tiene otro sintoma que desee agregar? (si/no)");
 					massintomas = scan.nextLine(); 
 				}
-				System.out.println("Ya has hecho una consulta con algun doctor o especialista");
+				System.out.println("Ya has hecho una consulta con algun doctor o especialista?");
 				System.out.println("Si esta es su primera cita, presione 1");
 				System.out.println("Si ya ha tenido una consulta medica, presione 2");
 				int consulta= scan.nextInt();
@@ -112,7 +123,7 @@ class ProyectoPOOD{
 					//se le pregunta si es menor o mayor de edad
 					System.out.println("------------------------------------------------------");
 					System.out.println("");
-					System.out.println("El paciente es menor a 18 anios? (si/no)");
+					System.out.println("El paciente es menor a 18 anios?");
 					System.out.println("Si la respuesta es 'Si' presione 1");
 					System.out.println("Si la respuesta es 'No' presione 2");
 					int edad = scan.nextInt();
@@ -428,5 +439,24 @@ class ProyectoPOOD{
 		}
 		System.out.println("------------------------------------------------------");
 		System.out.println("Gracias por llamarnos :)");
+		DO=0;
+		}
+		//Si usa un numero muy grande
+		catch(ArrayIndexOutOfBoundsException e) {
+			System.out.print("Has ingresado un numero muy grande");
+		}
+		//Si se confunde al poner un numero.
+		catch(InputMismatchException e) {
+			System.out.println("Ingresaste algo que no es un numero.");
+			System.out.println("");
+			
+			
+		}
+		finally {
+			System.out.println("Se te mandara de nuevo al inicio.");
+			
+		}
+		}while(DO==1);
+	
 	}
 }
