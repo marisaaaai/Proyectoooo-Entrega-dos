@@ -338,8 +338,10 @@ class ProyectoPOOD{
 								scan.nextLine(); 
 								if (DecicionHospedajeLejano== 1){
 									System.out.println("------------------------------------------------------");
-									System.out.println("Estos son los hoteles disponibles: " + archivos.DBh(deptlejano));
-									System.out.println("Estos son los transportes disponibles: " + archivos.DBt(deptlejano));
+									System.out.println("Estos son los hoteles disponibles: ");
+									archivos.DBt(deptlejano);
+									System.out.println("Estos son los transportes disponibles: ");
+									archivos.DBt(deptlejano);
 								}
 								else if (DecicionHospedajeLejano == 2){
 									System.out.println("Perfecto.");
@@ -357,8 +359,10 @@ class ProyectoPOOD{
 								if (infoDoctores==1){
 									System.out.println("------------------------------------------------------");
 									System.out.println("Los hospitales donde encontrara doctores es su departamento son: "+hosp.DB(deptlejano-1));
-									System.out.println("Estos son los hoteles disponibles: " + archivos.DBh(deptlejano));
-									System.out.println("Estos son los transportes disponibles: " + archivos.DBt(deptlejano));
+									System.out.println("Estos son los hoteles disponibles: ");
+									archivos.DBh(deptlejano);
+									System.out.println("Estos son los transportes disponibles: ");
+									archivos.DBt(deptlejano);
 								}
 								else if (infoDoctores==2){
 									System.out.println("");
@@ -384,7 +388,8 @@ class ProyectoPOOD{
 							scan.nextLine();
 							if(quiereTransporte== 1){
 								System.out.println("------------------------------------------------------");
-								System.out.println("Estos son los transportes disponibles: " + archivos.DBt(dept));
+								System.out.println("Estos son los transportes disponibles: ");
+								archivos.DBt(dept);
 							}
 							if(quiereTransporte== 2){
 								System.out.println("Perfecto.");
