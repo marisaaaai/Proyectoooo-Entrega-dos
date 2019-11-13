@@ -27,10 +27,8 @@ class ProyectoPOOD{
 		int w=0;
 		//variable para usar la calse y llamar bas de datos 
 		//Linea 22 y opcion 386
-		
+		archivos archivos = new archivos();
 		hospitales hosp = new hospitales(); 
-		transporte t = new transporte(); 
-		hoteles hot = new hoteles();
 		
 		//variable para enfermedad
 		enfermedad enfermedad = new enfermedad(); 
@@ -340,8 +338,8 @@ class ProyectoPOOD{
 								scan.nextLine(); 
 								if (DecicionHospedajeLejano== 1){
 									System.out.println("------------------------------------------------------");
-									System.out.println("Estos son los hoteles disponibles: " + hot.DB(deptlejano-1));
-									System.out.println("Estos son los transportes disponibles: " + t.DB(deptlejano-1));
+									System.out.println("Estos son los hoteles disponibles: " + archivos.DBh(deptlejano));
+									System.out.println("Estos son los transportes disponibles: " + archivos.DBt(deptlejano));
 								}
 								else if (DecicionHospedajeLejano == 2){
 									System.out.println("Perfecto.");
@@ -359,8 +357,8 @@ class ProyectoPOOD{
 								if (infoDoctores==1){
 									System.out.println("------------------------------------------------------");
 									System.out.println("Los hospitales donde encontrara doctores es su departamento son: "+hosp.DB(deptlejano-1));
-									System.out.println("Estos son los hoteles disponibles: " + hot.DB(deptlejano-1));
-									System.out.println("Estos son los transportes disponibles: " + t.DB(deptlejano-1));
+									System.out.println("Estos son los hoteles disponibles: " + archivos.DBh(deptlejano));
+									System.out.println("Estos son los transportes disponibles: " + archivos.DBt(deptlejano));
 								}
 								else if (infoDoctores==2){
 									System.out.println("");
@@ -386,7 +384,7 @@ class ProyectoPOOD{
 							scan.nextLine();
 							if(quiereTransporte== 1){
 								System.out.println("------------------------------------------------------");
-								System.out.println("Estos son los transportes disponibles: " + t.DB(dept-1));
+								System.out.println("Estos son los transportes disponibles: " + archivos.DBt(dept));
 							}
 							if(quiereTransporte== 2){
 								System.out.println("Perfecto.");
@@ -417,10 +415,10 @@ class ProyectoPOOD{
 					System.out.println("Ingrese la informacion de su servicio (nombre, numero de contacto: ");
 					String nombreNegocio = scan.nextLine();
 					if (servicio == 1){ 
-						t.addDB(nombreNegocio,dept-1);
+						archivos.addDBt(nombreNegocio,dept);
 					}
 					else if (servicio==2){
-						hot.addDB(nombreNegocio, dept-1);
+						archivos.addDBh(nombreNegocio, dept);
 					}
 					else {
 						System.out.println("Ingreso una opcion incorrecta.");
