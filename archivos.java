@@ -125,8 +125,9 @@ public class archivos{
 		try{
 			s = new Scanner(fichero);
 			while(s.hasNextLine()){
-				linea+= s.nextLine();
-				System.out.println("\n" + linea);
+				linea = s.nextLine();
+				System.out.println("");
+				System.out.println(linea + "\n");
 			}
 		}
 		catch(Exception ex) {
@@ -144,7 +145,7 @@ public class archivos{
 			}
 		}
 	}
-	public class addDBt(String info, int dept){
+	public void addDBt(String info, int dept){
 		if (dept==1){
 			this.archivo= "transporte1.txt";
 		}
@@ -262,7 +263,7 @@ public class archivos{
 			}
 			ficheros= new FileWriter(archivo);
 			linea= linea + "\n" + info;
-			ficheros.write(linea)
+			ficheros.write(linea);
 			
 			ficheros.close();
 		}
@@ -383,8 +384,8 @@ public class archivos{
 		try{
 			s = new Scanner(fichero);
 			while(s.hasNextLine()){
-				linea+= s.nextLine();
-				System.out.println("\n" + linea);
+				linea = s.nextLine();
+				System.out.println(linea + "\n");
 			}
 		}
 		catch(Exception ex) {
@@ -402,7 +403,7 @@ public class archivos{
 			}
 		}
 	}
-	public class addDBh(String info, int dept){
+	public void addDBh(String info, int dept){
 				if (dept==1){
 			this.archivo= "hoteles1.txt";
 		}
@@ -520,7 +521,7 @@ public class archivos{
 			}
 			ficheros= new FileWriter(archivo);
 			linea= linea + "\n" + info;
-			ficheros.write(linea)
+			ficheros.write(linea);
 			
 			ficheros.close();
 		}
