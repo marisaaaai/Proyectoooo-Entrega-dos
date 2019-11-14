@@ -65,6 +65,8 @@ class ProyectoPOOD{
 			System.out.println("Por favor ingrese el numero del departamento en el que se encuentra: ");
 			int dept = scan.nextInt();
 			scan.nextLine();
+			//revisa que el numero de departamento no sea mayor 
+			if(dept>22){System.out.println("El numero de departamento es invalido"); w=2;}
 			System.out.println("------------------------------------------------------");
 			System.out.println("Para ir a la opcion de pacientes presione 1");
 			System.out.println("Para ir a la opcion de proveedores presione 2");
@@ -105,7 +107,7 @@ class ProyectoPOOD{
 					System.out.println("18. Dolor de espalda");
 					sintoma = scan.nextInt();
 					scan.nextLine(); 
-
+					if(sintoma>18){System.out.println("El numero de sintoma es invalido"); w=2;}
 					//saldria algo asi Sus posibles enfermedades son: tos, hipertension, alergia, 
 					diagnosticos = diagnosticos + enfermedad.diagnostico(sintoma)+", " ;
 					System.out.println("Tiene otro sintoma que desee agregar? (si/no)");
@@ -229,11 +231,13 @@ class ProyectoPOOD{
 									}
 									else {
 										System.out.println("El numero ingresado es invalido");
+										w=2;
 									}
 								}
 							}
 							else {
 								System.out.println("El numero ingresado es invalido");
+								w=2; 
 							}
 						}
 					}
@@ -277,6 +281,7 @@ class ProyectoPOOD{
 						}
 						else{
 							System.out.println("El numero ingresado es invalido");
+							w=2;
 						}
 					}
 				}
@@ -318,6 +323,7 @@ class ProyectoPOOD{
 							System.out.println("Por favor ingrese el numero de su departamento: ");
 							int deptlejano = scan.nextInt();
 							scan.nextLine(); 
+							if(deptlejano>22){System.out.println("El numero de departamento es invalido"); w=2;}
 							System.out.println("");
 							System.out.println("Ya sabe con quien ir?");
 							System.out.println("1.Si");
@@ -344,6 +350,10 @@ class ProyectoPOOD{
 								else if (DecicionHospedajeLejano == 2){
 									System.out.println("Perfecto.");
 								}
+								else{
+									System.out.println("El numero ingresado es incorrecto");
+									w=2; 
+								}
 							}
 
 							else if (decicionLejana == 2){
@@ -369,11 +379,13 @@ class ProyectoPOOD{
 								else{
 									System.out.println("");
 									System.out.println("Ha ingresado una opcion incorrecta."); 
+									w=2;
 								}
 							}
 							else{
 								System.out.println("");
 								System.out.println("Ha ingresado una opcion incorrecta."); 
+								w=2;
 							}
 						}
 						else if (lejania == 2){
@@ -394,10 +406,16 @@ class ProyectoPOOD{
 								w = 2;
 							}
 						}
+						else{
+							System.out.println("");
+							System.out.println("El numero ingresado es invalido");
+							w=2;
+						}
 					}
 					else{
 						System.out.println("");
 						System.out.println("El numero ingresado es invalido");
+						w=2;
 					}
 
 			}
@@ -425,10 +443,12 @@ class ProyectoPOOD{
 					}
 					else {
 						System.out.println("Ingreso una opcion incorrecta.");
+						w=2;
 					}
 				}
 				else {
 					System.out.println("El numero ingresado es invalido");
+					w=2;
 				}
 			}
 			System.out.println("------------------------------------------------------");
@@ -444,18 +464,15 @@ class ProyectoPOOD{
 		}
 		//Si usa un numero muy grande
 		catch(ArrayIndexOutOfBoundsException e) {
-			System.out.print("Has ingresado un numero muy grande ");
+			System.out.print("Ha ingresado un numero incorrecto. ");
 		}
 		//Si se confunde al poner un numero.
 		catch(InputMismatchException e) {
-			System.out.println("Ingresaste algo que no es un numero. ");
-			System.out.println("");
-			
-			
+			System.out.println("Tipo de dato ingresado erroneo. ");
+			System.out.println("");	
 		}
 		finally {
-			System.out.println("Se te mandara de nuevo al inicio.");
-			
+			System.out.println("El programa finalizó por un error. ");
 		}
 		}while(DO==1);
 	
