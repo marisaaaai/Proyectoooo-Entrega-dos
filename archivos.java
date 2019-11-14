@@ -488,6 +488,7 @@ public class archivos{
 																							this.archivo= "hoteles21.txt";
 																						}
 																						else{
+																							if(dept == 22){
 																							this.archivo="hoteles22.txt";
 																						}
 																					}
@@ -531,3 +532,4 @@ public class archivos{
 	}
 	
 }						
+}

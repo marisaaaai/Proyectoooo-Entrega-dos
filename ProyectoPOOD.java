@@ -105,6 +105,7 @@ class ProyectoPOOD{
 					System.out.println("18. Dolor de espalda");
 					sintoma = scan.nextInt();
 					scan.nextLine(); 
+
 					//saldria algo asi Sus posibles enfermedades son: tos, hipertension, alergia, 
 					diagnosticos = diagnosticos + enfermedad.diagnostico(sintoma)+", " ;
 					System.out.println("Tiene otro sintoma que desee agregar? (si/no)");
@@ -244,11 +245,11 @@ class ProyectoPOOD{
 							System.out.println("Ha contestado que el paciente es mayor de edad");
 							System.out.println("A continuacion se le brindara informacion sobre los procesos que debera de llevar en su consulta");
 							System.out.println("Ya conoce algun doctor con el cual ir, o alguna clinica medica?");	
-							System.out.println("Si es asi presiones 1");
-							System.out.println("Si no, por favor presione 2");
-							int doctor=scan.nextInt();
-							scan.nextLine(); 
-							if (doctor==1){
+							System.out.println("Si es asi presione 1");
+							System.out.println("Si no, por favor presione 2"); 
+							int doctor1 =scan.nextInt();
+								scan.nextLine();
+							if (doctor1==1){
 								System.out.println("------------------------------------------------------");
 								System.out.println("Esta bien, nos alegra que ya tenga un especialista conocido con el cual ir");
 								System.out.println("Este es el proceso basico de una consulta clinica");
@@ -259,8 +260,7 @@ class ProyectoPOOD{
 								System.out.println("");
 								System.out.println("");
 							}
-							else{
-								if (doctor==2){
+							else if (doctor1==2){
 									//en dept esta su departamento 
 									System.out.println("------------------------------------------------------");
 									System.out.println("Se le mostrara los hospitales en su departamento que puede ir para tener un doctor: "+hosp.DB(dept));
@@ -272,10 +272,8 @@ class ProyectoPOOD{
 									System.out.println("");
 									System.out.println("");								
 								}
-								else{
-									System.out.println("El numero ingresado es invalido");
-								}
-							}
+								
+							
 						}
 						else{
 							System.out.println("El numero ingresado es invalido");
@@ -326,8 +324,8 @@ class ProyectoPOOD{
 							System.out.println("2.No");
 							int decicionLejana = scan.nextInt();
 							scan.nextLine(); 
+							
 							if (decicionLejana==1){
-								scan.nextLine();
 								System.out.println("");
 								System.out.println("------------------------------------------------------");
 								System.out.println("Necesita transporte y/o hospedaje?");
@@ -446,11 +444,11 @@ class ProyectoPOOD{
 		}
 		//Si usa un numero muy grande
 		catch(ArrayIndexOutOfBoundsException e) {
-			System.out.print("Has ingresado un numero muy grande");
+			System.out.print("Has ingresado un numero muy grande ");
 		}
 		//Si se confunde al poner un numero.
 		catch(InputMismatchException e) {
-			System.out.println("Ingresaste algo que no es un numero.");
+			System.out.println("Ingresaste algo que no es un numero. ");
 			System.out.println("");
 			
 			
